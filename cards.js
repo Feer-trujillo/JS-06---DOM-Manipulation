@@ -38,7 +38,8 @@ const users = [
 ]
 
 
-// Función para crear una tarjeta
+
+// Función para crear tarjeta
 function createCard(user) {
     const card = document.createElement('div');
     card.className = 'card';
@@ -52,20 +53,32 @@ function createCard(user) {
     title.append(" - Nombre");
     title.classList.add("card-title");
 
+
+
+
     const id = document.createElement('h4');//Muestra los nombres de usuario
     id.textContent = user.id; 
     id.append(" - ID");
+
+
+
 
     const edad = document.createElement('h4');//Muestra la edad
     edad.textContent = user.age; 
     edad.append(" - Edad");
     
 
+
+
     const description = document.createElement('p'); //Muestra la descripcion
     description.textContent = user.description;
 
+
+
     const bandas = document.createElement('p');
     bandas.textContent = user.fav_music.bands;
+
+
 
     //Mostrar en el card
     card.appendChild(img);
@@ -78,7 +91,11 @@ function createCard(user) {
     return card;
 }
 
-// Obtener el contenedor y agregar tarjetas
+
+
+
+
+//Contenedor y tarjetas
 const container = document.getElementById('card-container');
 users.forEach(user => { // por cada usuario dentro del objeto
     const card = createCard(user); //se crea la card
