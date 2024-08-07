@@ -44,13 +44,15 @@ function createCard(user) {
     const card = document.createElement('div');
     card.className = 'card';
 
-    const img = document.createElement('img');// Nombre del usuario
+
+    // Nombre del usuario
+    const img = document.createElement('img');
     img.src = user.imageUrl;
     img.alt = user.user_name; 
 
 
-    //Muestra los nombres de 
-    const title = document.createElement('h2');usuario
+    //Muestra los nombres de usuario
+    const title = document.createElement('h2');
     title.textContent = user.user_name; 
     title.append(" - Nombre");
     title.classList.add("card-title");
