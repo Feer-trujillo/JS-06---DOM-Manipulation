@@ -99,7 +99,7 @@ function createCard(user) {
 
 //Contenedor y tarjetas
 const container = document.getElementById('card-container');
-users.forEach(user => { // por cada usuario dentro del objeto
+users.forEach(user => { 
     const card = createCard(user); //se crea la card
     container.appendChild(card);
 });
