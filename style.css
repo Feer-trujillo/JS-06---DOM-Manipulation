@@ -1,0 +1,16 @@
+body {
+    padding: 10px;
+    margin: 20px;
+    align-items: center;
+ }
+ 
+ .card-title{
+     color:blanchedalmond;
+     font-family: Arial, Helvetica, sans-serif;
+ }
+ 
+ .card{
+     background-color:darksalmon;
+     padding: 20px;
+     text-align: center;
+ }
