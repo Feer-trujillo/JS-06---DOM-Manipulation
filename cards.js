@@ -48,33 +48,35 @@ function createCard(user) {
     img.src = user.imageUrl;
     img.alt = user.user_name; 
 
-    const title = document.createElement('h2');//Muestra los nombres de usuario
+
+    //Muestra los nombres de 
+    const title = document.createElement('h2');usuario
     title.textContent = user.user_name; 
     title.append(" - Nombre");
     title.classList.add("card-title");
 
 
 
-
-    const id = document.createElement('h4');//Muestra los nombres de usuario
+    //Muestra el ID 
+    const id = document.createElement('h4');
     id.textContent = user.id; 
     id.append(" - ID");
 
 
 
-
-    const edad = document.createElement('h4');//Muestra la edad
+    //Muestra la edad
+    const edad = document.createElement('h4');
     edad.textContent = user.age; 
     edad.append(" - Edad");
     
 
 
-
-    const description = document.createElement('p'); //Muestra la descripcion
+    //Muestra la descripcion
+    const description = document.createElement('p'); 
     description.textContent = user.description;
 
 
-
+    //Muestra las bandas
     const bandas = document.createElement('p');
     bandas.textContent = user.fav_music.bands;
 
